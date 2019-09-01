@@ -34,7 +34,7 @@ Install the following application in your system :
 ### VIM
 ![Alt text](screenshots/vim.png)
 ### Polybar
-![Alt text](screenshots/empty\ screen.png)
+![Alt text](screenshots/empty%20screen.png)
 ### Rofi
 ![Alt text](screenshots/rofi.png)
 ### VS-Code
