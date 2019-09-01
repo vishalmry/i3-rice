@@ -29,9 +29,14 @@ Install the following application in your system :
 * https://github.com/addy-dclxvi/conky-theme-collections/tree/master/syclo
 
 # Screenshots
+### Neofetch
 ![Alt text](screenshots/neofetch.png)
+### VIM
 ![Alt text](screenshots/vim.png)
-![Alt text](screenshots/empty_screen.png)
+### Polybar
+![Alt text](screenshots/emptyscreen.png)
+### Rofi
 ![Alt text](screenshots/rofi.png)
+### VS-Code
 ![Alt text](screenshots/code.png)
 
