@@ -29,7 +29,7 @@ Install the following application in your system :
 * https://github.com/addy-dclxvi/conky-theme-collections/tree/master/syclo
 
 # Screenshots
-![](./screenshots/code.jpg)
+![Alt text](screenshots/code.jpg)
 ![](./screenshot.jpg)
 ![](./screenshot.jpg)
 ![](./screenshot.jpg)
