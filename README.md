@@ -29,9 +29,9 @@ Install the following application in your system :
 * https://github.com/addy-dclxvi/conky-theme-collections/tree/master/syclo
 
 # Screenshots
-![Alt text](screenshots/code.jpg)
-![](./screenshot.jpg)
-![](./screenshot.jpg)
-![](./screenshot.jpg)
-![](./screenshot.jpg)
+![Alt text](screenshots/neofetch.png)
+![Alt text](screenshots/vim.png)
+![Alt text](screenshots/empty_screen.png)
+![Alt text](screenshots/rofi.png)
+![Alt text](screenshots/code.png)
 
