@@ -15,15 +15,16 @@ Install the following application in your system :
 * Iosevka Nerd Font
 * ttf-font-awesome 
 * termite 
-* conky-lua 
-* wal-git 
+* conky-lua
 * xorg-xinput 
 * xorg-xbacklight 
 * pulseaudio 
 * scrot
 * gnome-screenshot 
 * lxappearance
-..................................................
+* sxhkd
+* pywal
+* gotop
 
 # Conky Widget Used
 * https://github.com/addy-dclxvi/conky-theme-collections/tree/master/syclo
