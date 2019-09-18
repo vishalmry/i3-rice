@@ -1,0 +1,3 @@
+localectl set-x11-keymap "" "" "" "ctrl:swapcaps"
+setxkbmap -option altwin:swap_alt_win
+xcape -e 'Control_L=Escape'
