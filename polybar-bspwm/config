@@ -17,8 +17,10 @@
 ;==========================================================
 
 [colors]
-background = ${xrdb:color1}
-; background = #991b1d1e
+; background = ${xrdb:color1}
+; background = #001b1d1e
+background = #00000000
+; background = #75563ab6
 background-alt = ${gruvbox.bg-light}
 foreground = ${gruvbox.fg-dark}
 foreground-alt = ${gruvbox.fg-light}
@@ -46,7 +48,7 @@ padding = 1
 [bar/mybar]
 monitor = ${env:MONITOR:}
 width = 100%
-height = 20
+height = 22
 bottom = false
 offset-x = 0
 offset-y = 0
@@ -59,11 +61,11 @@ foreground = ${colors.foreground}
 line-size = 1
 line-color = #eee
 
-border-size = 3
+border-size = 0
 border-color = ${colors.background}
 
-padding-left = 1
-padding-right = 1
+padding-left = 0
+padding-right = 0
 
 module-margin-left = 0
 module-margin-right = 0
@@ -72,9 +74,9 @@ font-0 = xos4 Terminus:style=Regular:size=12;2
 font-1 = Inconsolata Nerd Font:style=Regular:size=12;2
 font-2 = Inconsolata Nerd Font:style=Regular:size=21;3
 
-modules-left = bspwm powermenu alsa date arrow1
+modules-left = bspwm alsa arrow1
 modules-center =
-modules-right = arrow2 xbacklight wlan battery memory time
+modules-right = arrow2 xbacklight wlan battery time
 
 tray-position = right
 tray-background = #000
@@ -116,17 +118,15 @@ type = internal/bspwm
 
 ; Only show workspaces on the same output as the bar
 pin-workspaces = true
-module-margin-left = 8
-module-margin-right = 4
 label-mode-padding = ${general.padding}
-label-mode-foreground = #000
+label-mode-foreground = ${xrdb:color0}
 label-mode-background = ${colors.primary}
 
 ; focused = Active workspace on focused monitor
 label-focused = %icon% %index%
 label-focused-foreground = ${colors.foreground}
 ; label-focused-background = ${gruvbox.green}
-label-focused-background = ${xrdb:color2}
+label-focused-background = ${xrdb:color10}
 label-focused-padding = ${self.label-mode-padding}
 
 label-occupied = %icon% %index%
@@ -134,10 +134,11 @@ label-occupied-foreground = ${colors.foreground}
 label-occupied-background = ${xrdb:color0}
 ; label-occupied-background = #424242
 label-occupied-padding = ${self.label-mode-padding}
+; label-empty = %icon% %index%
 label-empty = 
 label-empty-foreground = ${colors.foreground}
 ; label-focused-background = ${gruvbox.green}
-label-empty-background = #000
+label-empty-background = ${xrdb:color0}
 label-empty-padding = ${self.label-focused-padding}
 
 
@@ -156,14 +157,14 @@ label-urgent-padding = ${self.label-focused-padding}
 [module/arrow2]
 type = custom/text
 content = 
-content-foreground = #000
+content-foreground = ${xrdb:color0}
 content-background = ${colors.background}
 content-font = 3
 
 [module/arrow1]
 type = custom/text
 content = 
-content-foreground = #000
+content-foreground = ${xrdb:color0}
 content-background = ${colors.background}
 content-font = 3
 
@@ -175,7 +176,7 @@ format = <label>
 format-prefix = "  "
 format-prefix-foreground = ${gruvbox.yellow}
 label = %percentage%%
-format-background = #000
+format-background = ${xrdb:color0}
 format-foreground = ${colors.foreground}
 format-padding = ${general.padding}
 
@@ -194,7 +195,7 @@ type = internal/network
 interface = wlo1
 interval = 3.0
 ; format-connected-background = #000
-format-connected-background = #000
+format-connected-background = ${xrdb:color0}
 
 format-connected = <label-connected>
 label-connected = %{A1:networkmanager_dmenu:}直%{A}
@@ -221,7 +222,7 @@ date-alt = %A, %d %B %Y
 format-prefix = "  "
 format-prefix-foreground = ${gruvbox.blue}
 format-padding = ${general.padding}
-format-background = #000
+format-background = ${xrdb:color0}
 label = %date%
 
 [module/time]
@@ -229,8 +230,9 @@ type = internal/date
 interval = 5
 
 time = %I:%M %p
+time-alt = %A, %d %B %Y
 
-format-background = #000
+format-background = ${xrdb:color0}
 
 format-prefix = "  "
 format-prefix-foreground = ${gruvbox.green}
@@ -261,16 +263,16 @@ type = internal/pulseaudio
 inherit = module/pulseaudio
 
 format-volume = <label-volume>
-format-volume-background = #000
+format-volume-background = ${xrdb:color0}
 label-volume =  %percentage%%
 label-volume-foreground = ${gruvbox.gray}
 ;label-volume-background = #000
 ; 
 format-muted-prefix = " "
-format-muted-background = #000
+format-muted-background = ${xrdb:color0}
 format-muted-foreground = ${colors.foreground}
 label-muted = Muted
-label-muted-background = #000
+label-muted-background = ${xrdb:color0}
 ; 
 bar-volume-width = 16
 bar-volume-foreground-0 = ${gruvbox.green}
@@ -293,17 +295,17 @@ full-at = 98
 format-charging = <animation-charging>  <label-charging>
 format-charging-padding = ${general.padding}
 
-format-charging-background = #000
+format-charging-background = ${xrdb:color0}
 
 format-discharging = <ramp-capacity>  <label-discharging>
 format-discharging-padding = ${self.format-charging-padding}
 ; format-discharging-background = #000
-format-discharging-background = #000
+format-discharging-background = ${xrdb:color0}
 
 format-full-prefix = "  "
 format-full-prefix-foreground = ${gruvbox.green}
 format-full-padding = ${general.padding}
-format-full-background = #000
+format-full-background = ${xrdb:color0}
 
 ramp-capacity-0 = 
 ramp-capacity-1 = 
